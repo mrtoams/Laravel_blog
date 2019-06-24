@@ -7,6 +7,7 @@
     @yield('styles')
 </head>
 <body>
+@include('partials.header') <!--Norada kur atrodas header fails, kurs tiks izmantots-->
 @yield('content')
 
 <script type="text/javascript" src="{{ URL::to('js/jquery.min.js') }}"></script>
