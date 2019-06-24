@@ -23,3 +23,4 @@ Route::post('/author/post', 'HomeController@createPost')->name('post.form');
 Route::get('/author/post/detail/{id}', 'HomeController@getPost')->name('post.detail');
 Route::get('/author/post/edit/{id}', 'HomeController@editPost')->name('post.edit');
 Route::post('/author/post/edit/{id}', 'HomeController@updatePost')->name('post.update');
+Route::get('/author/post/delete/{id}', 'HomeController@deletePost')->name('post.delete');

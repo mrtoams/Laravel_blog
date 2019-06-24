@@ -61,4 +61,10 @@ class HomeController extends Controller
         $post->save();
         return redirect()->route('home')->with('success', 'Post has been updated successfully!');
     }
+
+    public function deletePost($id) {
+        $post = Post::find($id);
+        $post->delete();
+        return redirect()->route('home')->with('success', 'Post has been deleted successfully!');
+    }
 }
